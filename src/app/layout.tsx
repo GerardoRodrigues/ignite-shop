@@ -1,10 +1,13 @@
 import { getCssText } from "@/styles";
+import { globalStyles } from "@/styles/global";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
+
+globalStyles();
 
 export default function RootLayout({
   children,
